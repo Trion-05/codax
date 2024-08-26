@@ -8,7 +8,7 @@ div.topnav {
   top: 0;
   border-bottom: 1px solid white;
   position: fixed;
-  background-image: url("../img/bg.jpg");
+  background-image: url(./img/bg.jpg);
   background-size: 200%;
     background-attachment: fixed;
     background-position: center;
@@ -54,7 +54,7 @@ div.topnav {
 }
 
   body{
-  background-image: url("../img/bg.jpg");
+  background-image: url("./img/bg.jpg");
   background-size: 200%;
     background-attachment: fixed;
     background-position: center;
@@ -140,7 +140,7 @@ details summary::-webkit-details-marker {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: black;
-  background-image: url("./img/bg.jpg");
+  background-image: url(./img/bg.jpg);
   background-size: 200%;
     background-attachment: fixed;
     background-position: center;
