@@ -1,1 +1,159 @@
+/*Navigation*/
+div.topnav {
+  background-color: #00000060;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solide white;
+  width: 100vw;
+  top: 0;
+  border-bottom: 1px solid white;
+  position: fixed;
+  background-image: url(../img/bg.jpg);
+  background-size: 200%;
+    background-attachment: fixed;
+    background-position: center;
+  background-repeat: repeat-y;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: center;
+  color: white;
+  text-align: center center;
+  padding: 5px 20px 5px 20px;
+  text-decoration: none;
+  font-size: 12px;
+  opacity: 100%;
+  font-family: monday;
+  
+  
+}
+
+/* hober color*/
+.topnav a:hover {
+  background-color: #1df5e350;
+  color: white;
+}
+
+/* active hover color*/
+.topnav a.active {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: white;
+}
+
+/*Body Content*/
+  .logo_main{
+  display: block;
+  margin: 0 auto;
+  max-height: 50%;
+  max-width: 50%;
+  width: auto;
+  -webkit-image-stroke: 1px solid white;
+  
+}
+
+  body{
+  background-image: url(../img/bg.jpg);
+  background-size: 200%;
+    background-attachment: fixed;
+    background-position: center;
+  background-repeat: repeat-y;
+    overflow: scroll;
+  height: auto;
+    position: sticky;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    backgroumd-color: black;
+    
+}
+
+button{
+  background-color: #1df5e350;
+  Color: white;
+  font-family: duck;
+}
+  
+
+
+
+.df{
+  color: white;
+  -webkit-text-stroke: 1px black;
+  font-family: monday;
+}
+
+.hl{
+  font-family: duck;
+  color: cyan;
+}
+
+@font-face {
+  font-family: duck;
+  src: url(./duck.ttf);
+  
+  font-family: monday;
+  src: url(./monday.ttf);
+}
+
+
+/*SUMMARY CONTENTS*/
+
+.sm{
+  display: block;
+  list-style-type: none;
+  font-family: monday;
+  color: white;
+    -webkit-text-stroke: 1px black;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: scroll;
+  height: autop;
+}
+
+details > summary {
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display:none;
+}
+
+
+  /*footer*/
+.footer {
+  border-top: 1px solid white;
+  float: center;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  text-align: center center;
+  text-decoration: none;
+  font-size: 12px;
+  opacity: 100%;
+  font-family: monday;
+  width: 100vw;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: black;
+  background-image: url(../img/bg.jpg);
+  background-size: 200%;
+    background-attachment: fixed;
+    background-position: center;
+background-repeat: repeat;
+  
+  /*Fonts*/
+}
+@font-face {
+  font-family: duck;
+  src: url(./duck.ttf);
+  
+  @font-face {
+  font-family: monday;
+  src: url(./monday.ttf);
+  }
 
