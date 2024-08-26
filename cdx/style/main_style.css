@@ -112,6 +112,7 @@ button{
   padding-right: 20px;
   overflow: scroll;
   height: autop;
+  -webkit-text-stroke: 1px black;
 }
 
 details > summary {
@@ -120,6 +121,7 @@ details > summary {
 
 details summary::-webkit-details-marker {
   display:none;
+  -webkit-text-stroke: 1px black;
 }
 
 
