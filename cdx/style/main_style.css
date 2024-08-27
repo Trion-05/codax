@@ -46,10 +46,9 @@ div.topnav {
   .logo_main{
   display: block;
   margin: 0 auto;
-  max-height: 50%;
-  max-width: 50%;
+  max-height: 30%;
+  max-width: 30%;
   width: auto;
-  -webkit-image-stroke: 1px solid white;
   
 }
 
