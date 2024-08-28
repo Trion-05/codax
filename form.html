@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./cdx/style/main_style.css">
+    <title>School Form and Count</title>
+    <style>
+        body {
+            background-image: url('./cdx/img/bg.jpg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 500px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+        .logo {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        iframe {
+            width: 100%;
+            border: none;
+        }
+        .form-container, .sheet-container {
+            margin-bottom: 20px;
+        }
+        .home-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .home-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./cdx/img/logo.png" alt="School Logo" class="logo">
+        <h1 class="s">Sumbit Count, Enter your school acronym</h1>
+
+        <!-- Embed Google Form -->
+        <div class="form-container">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScKw0RbOsYSqCAIyTAP_mg3Z9cNgsXetCLjE3x5e-iKxZ0pfw/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+
+        <a href="index.html" class="home-button">Home</a>
+    </div>
+</body>
+</html>
