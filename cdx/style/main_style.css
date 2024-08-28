@@ -71,6 +71,7 @@ div.topnav {
 button{
   background-color: #1df5e350;
   Color: white;
+  -webkit-text-stroke: 1px black;
   font-family: duck;
 }
   
