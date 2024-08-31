@@ -159,3 +159,6 @@ background-repeat: repeat;
   src: url(./monday.ttf);
   }
 
+iframe{
+border:2px solid white;
+}
