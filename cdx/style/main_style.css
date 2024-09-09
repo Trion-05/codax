@@ -9,7 +9,7 @@ box-shadow: inset 5px 5px 10px #454d68,
   top: 0;
   border-bottom: 0.5px solid white;
   position: fixed;
-background-image: radial-gradient( circle farthest-corner at 48.4% 47.5%,  rgba(122,183,255,1) 0%, rgba(21,83,161,1) 90% );
+background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, rgb(53, 92, 125) 88.8%);
   background-size: 200%;
     background-attachment: fixed;
     background-position: center;
@@ -53,7 +53,7 @@ background-image: radial-gradient( circle farthest-corner at 48.4% 47.5%,  rgba(
 }
 
   body{
- background-image: radial-gradient( circle farthest-corner at 48.4% 47.5%,  rgba(122,183,255,1) 0%, rgba(21,83,161,1) 90% );
+background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, rgb(53, 92, 125) 88.8%);
   background-size: 200%;
     background-attachment: fixed;
     background-position: center;
@@ -145,7 +145,7 @@ details summary::-webkit-details-marker {
   background: #2e334580;
 box-shadow: inset 5px 5px 5px #454d68,
             inset -5px -5px 5px #454d68;
-  background-image: url("./bg.jpg");
+   background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, rgb(53, 92, 125) 88.8%);
   background-size: 200%;
     background-attachment: fixed;
     background-position: center;
@@ -169,34 +169,4 @@ border:2px solid white;
             width: 100%;
             border: none;
      }
-.googleSlideshow{
- width:100%;
- height:550px;
- overflow:hidden;
-   position: fixed;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 100%;
-  top: 0;
-  border-bottom: 0.5px solid white;
-  position: fixed;
-  background-image: url("./bg.jpg");
-  background-size: 200%;
-    background-attachment: fixed;
-    background-position: center;
-}
-.googleSlideshow iframe{
- width:450px! important;
- height:calc(100% + 29px);
-   position: fixed;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 100%;
-  top: 0;
-  border-bottom: 0.5px solid white;
-  position: fixed;
-  background-image: radial-gradient( circle farthest-corner at 48.4% 47.5%,  rgba(122,183,255,1) 0%, rgba(21,83,161,1) 90% );
-  background-size: 200%;
-    background-attachment: fixed;
-    background-position: center;
-}
+
