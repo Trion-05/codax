@@ -9,7 +9,7 @@ box-shadow: inset 5px 5px 10px #454d68,
   top: 0;
   border-bottom: 0.5px solid white;
   position: fixed;
-  background-image: url("./bg.jpg");
+background-image: radial-gradient( circle farthest-corner at 48.4% 47.5%,  rgba(122,183,255,1) 0%, rgba(21,83,161,1) 90% );
   background-size: 200%;
     background-attachment: fixed;
     background-position: center;
@@ -53,7 +53,7 @@ box-shadow: inset 5px 5px 10px #454d68,
 }
 
   body{
-  background-image: url("./bg.jpg");
+ background-image: radial-gradient( circle farthest-corner at 48.4% 47.5%,  rgba(122,183,255,1) 0%, rgba(21,83,161,1) 90% );
   background-size: 200%;
     background-attachment: fixed;
     background-position: center;
@@ -195,7 +195,7 @@ border:2px solid white;
   top: 0;
   border-bottom: 0.5px solid white;
   position: fixed;
-  background-image: url("./bg.jpg");
+  background-image: radial-gradient( circle farthest-corner at 48.4% 47.5%,  rgba(122,183,255,1) 0%, rgba(21,83,161,1) 90% );
   background-size: 200%;
     background-attachment: fixed;
     background-position: center;
