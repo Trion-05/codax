@@ -47,8 +47,8 @@ box-shadow: inset 5px 5px 10px #454d68,
   .logo_main{
   display: block;
   margin: 10 auto;
-  height: 150px;
-  width: 150px;
+  height: 250px;
+  width: 250px;
   
 }
 
@@ -64,7 +64,6 @@ box-shadow: inset 5px 5px 10px #454d68,
     margin-bottom: 100px;
     display: flex;
     flex-direction: column;
-    backgroumd-color: black;
     
 }
 
