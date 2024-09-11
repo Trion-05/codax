@@ -179,7 +179,40 @@ border:2px solid white;
             height: 50px;
         }
 
-        .search-bar {
-            flex: 1; /* Takes up remaining space */
-            margin-left: 10px; /* Space between logo and search bar */
-        }
+       body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.logo-container {
+    margin-right: 20px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+
+
+
+
+.topnav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.topnav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+
+
