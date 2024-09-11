@@ -175,3 +175,11 @@ border:2px solid white;
             border: none;
      }
 
+.logo {
+            height: 50px;
+        }
+
+        .search-bar {
+            flex: 1; /* Takes up remaining space */
+            margin-left: 10px; /* Space between logo and search bar */
+        }
