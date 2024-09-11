@@ -1,35 +1,58 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const searchContent = document.getElementById('searchContent');
+  const searchInput = document.getElementById('searchInput');
   const contentList = document.getElementById('contentList');
+  const dropdown = document.getElementById('dropdown');
+  const dropdownList = document.getElementById('dropdownList');
+  const searchButton = document.getElementById('searchButton');
+  const homeButton = document.getElementById('homeButton');
 
-  // Collect all links
-  function content() {
-    const content = document.querySelectorAll('a');
-    linkList.innerHTML = '';
+  function collectContent() {
+    const links = document.querySelectorAll('a');
+    contentList.innerHTML = '';
     links.forEach(link => {
       const li = document.createElement('li');
       const a = document.createElement('a');
       a.href = link.href;
-      a.textContent = link.textContent; // Display content
-      a.target = '_blank'; // Open in a new tab
+      a.textContent = link.textContent; // Set link text
+      a.target = '_blank';
       li.appendChild(a);
-      linkList.appendChild(li);
+      contentList.appendChild(li);
     });
   }
 
-  // Search contnet 
-  function searchContent() {
+  function filterContent() {
     const filter = searchInput.value.toLowerCase();
-    const items = linkList.getElementsByTagName('li');
+    const items = contentList.getElementsByTagName('li');
+    dropdownList.innerHTML = ''; // Clear dropdown
+
+    if (filter.trim() === '') {
+      dropdown.style.display = 'none'; // Hide if empty
+      return;
+    }
+
     Array.from(items).forEach(item => {
       const text = item.textContent || item.innerText;
-      item.style.display = text.toLowerCase().includes(filter) ? '' : 'none';
+      if (text.toLowerCase().includes(filter)) {
+        const dropdownItem = item.cloneNode(true);
+        dropdownList.appendChild(dropdownItem);
+      }
     });
+
+    dropdown.style.display = dropdownList.childElementCount > 0 ? 'block' : 'none'; // Show/hide
   }
 
-  // Collect all content when loaded
-  content();
-  
-  // Add event listener
-  searchInput.addEventListener('keyup', search contents);
+  function performSearch() {
+    filterContent(); // Filter content
+    dropdown.style.display = 'none'; // Hide dropdown
+  }
+
+  function goHome() {
+    window.location.href = 'index.html'; // Redirect to home
+  }
+
+  collectContent();
+
+  searchInput.addEventListener('input', filterContent); // Update dropdown
+  searchButton.addEventListener('click', performSearch); // Search button
+  homeButton.addEventListener('click', goHome); // Home button
 });
