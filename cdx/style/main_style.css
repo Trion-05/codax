@@ -44,6 +44,11 @@ background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, rgb(53, 92, 125) 88.8%
 }
 
 /*Body Content*/
+
+.alt_logo{
+height: 20px;
+width:100%;
+}
   .logo_main{
   display: block;
   margin: 10 auto;
