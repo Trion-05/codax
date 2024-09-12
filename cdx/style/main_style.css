@@ -1,7 +1,7 @@
 /*Navigation*/
 div.topnav {
   background: #2e334580;
-box-shadow: inset 5px 5px 10px #454d68,
+  box-shadow: inset 5px 5px 10px #454d68,
             inset -5px -5px 10px #454d68;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -9,10 +9,10 @@ box-shadow: inset 5px 5px 10px #454d68,
   top: 0;
   border-bottom: 0.5px solid white;
   position: fixed;
-background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, rgb(53, 92, 125) 88.8%);
+  background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, rgb(53, 92, 125) 88.8%);
   background-size: 200%;
-    background-attachment: fixed;
-    background-position: center;
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: repeat-y;
 }
 
@@ -48,59 +48,57 @@ background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, rgb(53, 92, 125) 88.8%
 .alt_logo{
 float: center;
 }
-  .logo_main{
+.logo_main{
   display: block;
   margin: 10 auto;
   height: 250px;
-  width: 250px;
-  
+  width: 250px;  
 }
 
-  body{
-background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, rgb(53, 92, 125) 88.8%);
+body{
+  background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, rgb(53, 92, 125) 88.8%);
   background-size: 200%;
-    background-attachment: fixed;
-    background-position: center;
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: repeat-y;
-    overflow: scroll;
+  overflow: scroll;
   height: auto;
-    position: sticky;
-    margin-bottom: 100px;
-    display: flex;
-    flex-direction: column;
-    
+  position: sticky;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;   
 }
 
 button{
-background-color: #2e334580;
-Color: white;
--webkit-text-stroke: 1px black;
-font-family: duck;
-box-shadow: inset 5px 5px 10px #454d68,
-            inset -5px -5px 10px #454d68;
+  background-color: #2e334580;
+  Color: white;
+  -webkit-text-stroke: 1px black;
+  font-family: duck;
+  box-shadow: inset 5px 5px 10px #454d68,
+              inset -5px -5px 10px #454d68;
 }
   
 
 
 
 .df{
-  color: white;
-  -webkit-text-stroke: 1px black;
-  font-family: monday;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    font-family: monday;
 }
 
 .hl{
-  font-family: duck;
+    font-family: duck;
     -webkit-text-stroke: 1px black;
-  color: #7c9bcc;
+    color: #7c9bcc;
 }
 
 @font-face {
-  font-family: duck;
-  src: url(./duck.ttf);
+    font-family: duck;
+    src: url(./duck.ttf);
   
-  font-family: monday;
-  src: url(./monday.ttf);
+    font-family: monday;
+    src: url(./monday.ttf);
 }
 
 
@@ -126,32 +124,32 @@ details > summary {
 }
 
 details summary::-webkit-details-marker {
-  display:none;
-  -webkit-text-stroke: 1px black;
+                display:none;
+              -webkit-text-stroke: 1px black;
 }
 
 
   /*footer*/
 .footer {
-  border-top: 0.5px solid white;
-  float: center;
-  color: white;
-  position: fixed;
-  bottom: 0;
-  text-align: center center;
-  text-decoration: none;
-  font-size: 12px;
-  opacity: 100%;
-  font-family: monday;
-  width: 100%;
-  height: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background: #2e334580;
-box-shadow: inset 5px 5px 5px #454d68,
-            inset -5px -5px 5px #454d68;
+    border-top: 0.5px solid white;
+    float: center;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    text-align: center center;
+    text-decoration: none;
+    font-size: 12px;
+    opacity: 100%;
+    font-family: monday;
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #2e334580;
+    box-shadow: inset 5px 5px 5px #454d68,
+                inset -5px -5px 5px #454d68;
    background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, rgb(53, 92, 125) 88.8%);
-  background-size: 200%;
+    background-size: 200%;
     background-attachment: fixed;
     background-position: center;
 background-repeat: repeat;
@@ -159,18 +157,18 @@ background-repeat: repeat;
   /*Fonts*/
 }
 @font-face {
-  font-family: duck;
-  src: url(./duck.ttf);
+        font-family: duck;
+        src: url(./duck.ttf);
   
-  @font-face {
-  font-family: monday;
-  src: url(./monday.ttf);
+@font-face {
+      font-family: monday;
+        src: url(./monday.ttf);
   }
 
 .ft{
-border:2px solid white;
+    border:2px solid white;
 } 
-     iframe {
+iframe {
             width: 100%;
             border: none;
      }
@@ -193,12 +191,7 @@ border:2px solid white;
 .search-container {
     display: flex;
     align-items: center;
-
-
-
-
-
-
+  
 .topnav ul {
     list-style: none;
     padding: 0;
