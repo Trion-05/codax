@@ -43,15 +43,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function performSearch() {
-    filterContent(); // Filter content
-    dropdown.style.display = 'none'; // Hide dropdown
-    
-    // Display searched word
     const searchTerm = searchInput.value.trim();
     if (searchTerm !== '') {
       searchedWordDisplay.textContent = `Searched for: ${searchTerm}`;
+      
+      // Display the actual <a> elements
+      filterContent(); // Filter content
+      dropdown.style.display = 'block'; // Show dropdown
     } else {
       searchedWordDisplay.textContent = ''; // Clear the display if no search term
+      dropdown.style.display = 'none'; // Hide dropdown if no search term
     }
   }
 
