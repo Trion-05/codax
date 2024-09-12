@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchButton = document.getElementById('searchButton');
     const homeButton = document.getElementById('homeButton');
 
-    // Function to collect all links within <details> elements
+    // Function to collect all <a> tags from <details> and <summary> elements
     function collectContent() {
-        const links = Array.from(document.querySelectorAll('details a'));
+        const links = Array.from(document.querySelectorAll('details a, summary a'));
         dropdownList.innerHTML = '';
         links.forEach(link => {
             const li = document.createElement('li');
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to perform search and hide dropdown after search
     function performSearch() {
         filterContent(); // Filter content
-        dropdown.style.display = 'none'; // Hide dropdown after search
+        // No need to hide dropdown here since `filterContent` handles it
     }
 
     // Function to go to the home page
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     collectContent(); // Collect all content on load
 
-    searchInput.addEventListener('input', filterContent); // Update dropdown
+    searchInput.addEventListener('input', filterContent); // Update dropdown on input
     searchButton.addEventListener('click', performSearch); // Search button
     homeButton.addEventListener('click', goHome); // Home button
 });
