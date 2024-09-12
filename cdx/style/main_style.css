@@ -14,9 +14,6 @@ div.topnav {
   background-attachment: fixed;
   background-position: center;
   background-repeat: repeat-y;
-   list-style-type: none; 
-    padding: 0;            
-    margin: 0;
 }
 
 /* Style the links inside the navigation bar */
@@ -199,6 +196,10 @@ iframe {
     list-style-type: none;
     padding: 0;
 }
-
-
+/*hide the dot for the list8/
+ .nd {
+   list-style-type: none; 
+    padding: 0;            
+    margin: 0;
+ }
 
