@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const dropdownList = document.getElementById('dropdownList');
   const searchButton = document.getElementById('searchButton');
   const homeButton = document.getElementById('homeButton');
+  const searchedWordDisplay = document.getElementById('searchedWordDisplay'); // New element for displaying searched word
 
   function collectContent() {
     const links = document.querySelectorAll('a');
@@ -44,6 +45,14 @@ document.addEventListener('DOMContentLoaded', () => {
   function performSearch() {
     filterContent(); // Filter content
     dropdown.style.display = 'none'; // Hide dropdown
+    
+    // Display searched word
+    const searchTerm = searchInput.value.trim();
+    if (searchTerm !== '') {
+      searchedWordDisplay.textContent = `Searched for: ${searchTerm}`;
+    } else {
+      searchedWordDisplay.textContent = ''; // Clear the display if no search term
+    }
   }
 
   function goHome() {
