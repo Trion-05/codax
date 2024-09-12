@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const searchInput = document.getElementById('searchInput');
+  const contentList = document.getElementById('contentList');
   const dropdown = document.getElementById('dropdown');
   const dropdownList = document.getElementById('dropdownList');
   const searchButton = document.getElementById('searchButton');
@@ -7,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function collectContent() {
     const links = document.querySelectorAll('a');
-    dropdownList.innerHTML = ''; // Clear previous results
+    contentList.innerHTML = '';
     links.forEach(link => {
       const li = document.createElement('li');
       const a = document.createElement('a');
@@ -15,14 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
       a.textContent = link.textContent; // Set link text
       a.target = '_blank';
       li.appendChild(a);
-      dropdownList.appendChild(li);
+      contentList.appendChild(li);
     });
   }
 
   function filterContent() {
     const filter = searchInput.value.toLowerCase();
-    const items = dropdownList.getElementsByTagName('li');
-    dropdownList.innerHTML = ''; // Clear previous results
+    const items = contentList.getElementsByTagName('li');
+    dropdownList.innerHTML = ''; // Clear dropdown
 
     if (filter.trim() === '') {
       dropdown.style.display = 'none'; // Hide if empty
@@ -32,11 +33,12 @@ document.addEventListener('DOMContentLoaded', () => {
     Array.from(items).forEach(item => {
       const text = item.textContent || item.innerText;
       if (text.toLowerCase().includes(filter)) {
-        dropdownList.appendChild(item.cloneNode(true)); // Clone matching item
+        const dropdownItem = item.cloneNode(true);
+        dropdownList.appendChild(dropdownItem);
       }
     });
 
-    dropdown.style.display = dropdownList.childElementCount > 0 ? 'block' : 'none'; // Show/hide dropdown
+    dropdown.style.display = dropdownList.childElementCount > 0 ? 'block' : 'none'; // Show/hide
   }
 
   function performSearch() {
