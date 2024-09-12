@@ -203,3 +203,6 @@ iframe {
     margin: 0;
  }
 
+table, th, td {
+  border:2px solid white;
+  width: 50%;
