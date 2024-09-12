@@ -193,9 +193,14 @@ iframe {
     align-items: center;
   
 .topnav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
+.topnav li {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;            /* Remove padding */
+    margin: 0;             /* Remove margin */
+}
 
 
