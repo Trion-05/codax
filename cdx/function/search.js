@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchButton = document.getElementById('searchButton');
     const homeButton = document.getElementById('homeButton');
 
+    // Function to collect all links within <details> elements
     function collectContent() {
         const links = Array.from(document.querySelectorAll('details a'));
         dropdownList.innerHTML = '';
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Function to filter links based on the search input
     function filterContent() {
         const filter = searchInput.value.toLowerCase();
         const items = dropdownList.getElementsByTagName('li');
@@ -39,11 +41,13 @@ document.addEventListener('DOMContentLoaded', () => {
         dropdown.style.display = dropdownList.childElementCount > 0 ? 'block' : 'none'; // Show/hide
     }
 
+    // Function to perform search and hide dropdown after search
     function performSearch() {
         filterContent(); // Filter content
         dropdown.style.display = 'none'; // Hide dropdown after search
     }
 
+    // Function to go to the home page
     function goHome() {
         window.location.href = 'index.html'; // Redirect to home
     }
