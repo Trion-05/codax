@@ -169,14 +169,10 @@ background-repeat: repeat;
     border:2px solid white;
 } 
 
-iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
+
 
 iframe > body {
-  transform: scale(0.8);
+  transform: scale(0.6);
   transform-origin: 0 0;
   width: 125%; 
   height: 125%; 
