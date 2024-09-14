@@ -21,7 +21,8 @@ body {
 main {
   flex: 1;
   overflow-y: auto;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
+margin-top:30px
 }
 
 .footer {
@@ -39,6 +40,7 @@ main {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   z-index: 10;
+height: 30px;
 }
 
 /* Existing styles for other elements */
@@ -56,6 +58,7 @@ main {
   background-clip: padding-box;
   margin: 0;
   z-index: 10;
+height: 30px;
 }
 
 .topnav a {
