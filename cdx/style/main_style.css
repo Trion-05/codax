@@ -13,6 +13,7 @@ div.topnav {
   background-clip: padding-box;
 height: 30px;
   margin: 0;
+z-index: 10;
 
 }
 
@@ -31,6 +32,7 @@ height: 30px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 height:30px
+z-index: 10;
 }
 @font-face {
     font-family: lemon_days;
