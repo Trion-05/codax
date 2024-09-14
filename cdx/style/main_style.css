@@ -63,7 +63,6 @@ float: center;
 body{
   background: rgb(146,146,167);
 background: radial-gradient(circle, rgba(146,146,167,1) 1%, rgba(26,44,68,1) 99%);
-  background-size: 200%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: repeat-y;
@@ -155,10 +154,7 @@ details summary::-webkit-details-marker {
                 inset -5px -5px 5px #454d68;
    background: rgb(146,146,167);
 background: radial-gradient(circle, rgba(146,146,167,1) 1%, rgba(26,44,68,1) 99%);
-    background-size: 200%;
-    background-attachment: fixed;
-    background-position: center;
-background-repeat: repeat;
+}
 
   /*Fonts*/
 
