@@ -1,8 +1,6 @@
 /*Navigation*/
 div.topnav {
   background: #1a2c44;
-  box-shadow: inset 5px 5px 10px #454d68,
-            inset -5px -5px 10px #454d68;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
@@ -150,9 +148,7 @@ details summary::-webkit-details-marker {
     padding-top: 10px;
     padding-bottom: 10px;
     background: #1a2c44;
-    box-shadow: inset 5px 5px 5px #454d68,
-                inset -5px -5px 5px #454d68;
-}
+    
 
   /*Fonts*/
 
