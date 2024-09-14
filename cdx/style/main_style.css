@@ -1,5 +1,48 @@
-/* Navigation */
-div.topnav {
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(146, 146, 167);
+  background: radial-gradient(circle, rgba(146, 146, 167, 1) 1%, rgba(26, 44, 68, 1) 99%);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat-y;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: lemon_days;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 50px;
+}
+
+.footer {
+  border-top: 0.5px solid white;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  font-size: 12px;
+  font-family: lemon_days;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+/* Existing styles for other elements */
+.topnav {
   background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
   padding-top: 10px;
@@ -37,40 +80,6 @@ div.topnav {
   color: white;
 }
 
-/* Footer */
-.footer {
-  border-top: 0.5px solid white;
-  color: #fff;
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-  font-size: 12px;
-  font-family: lemon_days;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  z-index: 10;
-}
-
-/* Body Content */
-body {
-  background: rgb(146, 146, 167);
-  background: radial-gradient(circle, rgba(146, 146, 167, 1) 1%, rgba(26, 44, 68, 1) 99%);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: repeat-y;
-  overflow: auto; /* Make body scrollable */
-  margin: 0;
-  padding-bottom: 50px; /* Space for footer */
-  font-family: lemon_days;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Content Area */
 .alt_logo {
   float: center;
 }
@@ -78,8 +87,8 @@ body {
 .logo_main {
   display: block;
   margin: 10 auto;
-  height: 200px;
-  width: 200px;  
+  height: 250px;
+  width: 250px;  
 }
 
 button {
@@ -102,7 +111,6 @@ button {
   color: #a9a9bf;
 }
 
-/* Summary Contents */
 .sm {
   display: block;
   list-style-type: none;
@@ -116,7 +124,7 @@ button {
   height: auto;
   font-size: 30px;
   margin-bottom: 100px;
-  overflow: auto; /* Ensure overflow content is scrollable */
+  overflow: auto;
 }
 
 details > summary {
@@ -128,7 +136,6 @@ details summary::-webkit-details-marker {
   -webkit-text-stroke: 1px black;
 }
 
-/* Fonts */
 @font-face {
   font-family: lemon_days;
   src: url(./lemon_days.ttf);
@@ -138,7 +145,6 @@ details summary::-webkit-details-marker {
   border: 2px solid white;
 }
 
-/* Iframe */
 iframe > body {
   transform: scale(0.6);
   transform-origin: 0 0;
@@ -146,7 +152,6 @@ iframe > body {
   height: 125%;
 }
 
-/* Logo */
 .logo {
   height: 50px;
 }
@@ -155,26 +160,22 @@ iframe > body {
   margin-right: 5px;
 }
 
-/* Search Container */
 .search-container {
   display: flex;
   align-items: center;
 }
 
-/* Topnav List */
 .topnav ul {
   list-style-type: none;
   padding: 0;
 }
 
-/* Hide the dot for the list */
 .nd {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-/* Table */
 table, th, td {
   border: 2px solid white;
   width: 50%;
