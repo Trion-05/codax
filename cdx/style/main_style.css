@@ -209,38 +209,91 @@ table, th, td {
 
 
 /* Codax The Community Section Card Styles */
+
+
+.id-card-holder {
+			width: 225px;
+		    padding: 4px;
+		    margin: 0 auto;
+		    background-color: #1f1f1f;
+		    border-radius: 5px;
+		    position: relative;
+		}
+.id-card-holder:after {
+		    content: '';
+		    width: 7px;
+		    display: block;
+		    background-color: #0a0a0a;
+		    height: 100px;
+		    position: absolute;
+		    top: 105px;
+		    border-radius: 0 5px 5px 0;
+		}
+.id-card-holder:before {
+		    content: '';
+		    width: 7px;
+		    display: block;
+		    background-color: #0a0a0a;
+		    height: 100px;
+		    position: absolute;
+		    top: 105px;
+		    left: 222px;
+		    border-radius: 5px 0 0 5px;
+		}
 .id-card {
-    display: flex;
-    flex-direction: column; /* Stack sections vertically */
-    width: 300px;
-    height: auto; /* Adjust height automatically */
-    margin: 10px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 12px;
-    border: 1px solid #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(8px);
-    overflow: hidden;
-}
+			
+			background: black;
+			padding: 10px;
+			border-radius: 10px;
+			text-align: center;
+			box-shadow: 0 0 1.5px 0px #b9b9b9;
+		}
+.id-card img {
+			margin: 0 auto;
+		}
+.header img {
+			width: 40px;
+    		margin-top: 15px;
+		}
+.photo img {
+			width: 80px;
+    		margin-top: 15px;
+		}
+h2 {
+			font-size: 15px;
+font-family: lemon_days;
+			margin: 5px 0;
+	    color: #a9a9ff;
+			-webkit-text-stroke: 0.1px black;
+		}
+h3 {
+			font-size: 12px;
+font-family: lemon_days;
+			margin: 2.5px 0;
+			font-weight: 300;
+			color: white;
+			-webkit-text-stroke: 0.1px black;
+		}
+.user img {
+			width: 80px;
+		}
+p {
+			font-size: 10px;
+font-family: lemon_days;
+			color: white;
+	-webkit-text-stroke: 0.1px black;
+			margin: 2px;
+	
+		}
 
-.picture-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    background: #fff;
-}
-
-.profile-pic {
-    width: 200px; /* Fixed size for profile picture */
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.details-section {
-    padding: 10px;
-    background: #fff;
-}
-
+.id-card-hook:after {
+			content: '';
+		    background-color: white;
+		    width: 47px;
+		    height: 6px;
+		    display: block;
+		    margin: 0px auto;
+		    position: relative;
+		    top: 6px;
+		    border-radius: 4px;
+		}
