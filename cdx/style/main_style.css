@@ -208,13 +208,22 @@ table, th, td {
     justify-content: space-around;
 }
 
+/* ID Card Styles */
+.id-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .id-card {
     display: flex;
     flex-direction: row;
-    width: 300px;
+    width: 300px; /* Adjust width for 3:4 ratio */
+    height: 400px; /* Adjust height for 3:4 ratio */
     margin: 10px;
     background: rgba(255, 255, 255, 0.8);
-    border-radius: 8px;
+    border-radius: 12px; /* Increased border-radius for better rounding */
+    border: 1px solid #fff; /* White border */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(8px);
     overflow: hidden;
@@ -231,8 +240,8 @@ table, th, td {
 }
 
 .profile-pic {
-    width: 100px;
-    height: 100px;
+    width: 80px; /* Adjust size for scaling */
+    height: 80px; /* Adjust size for scaling */
     border-radius: 50%;
     object-fit: cover;
 }
@@ -272,7 +281,7 @@ table, th, td {
     .id-card {
         flex-direction: column;
         width: 90%;
+        height: auto; /* Adjust height for responsive design */
     }
 }
-
 
