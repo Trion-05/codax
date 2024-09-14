@@ -209,35 +209,21 @@ table, th, td {
 
 
 /* Codax The Community Section Card Styles */
-.id-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-/* ID Card Styles */
-.id-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
 .id-card {
     display: flex;
-    flex-direction: row;
-    width: 300px; /* Adjust width for 3:4 ratio */
-    height: 400px; /* Adjust height for 3:4 ratio */
+    flex-direction: column; /* Stack sections vertically */
+    width: 300px;
+    height: auto; /* Adjust height automatically */
     margin: 10px;
     background: rgba(255, 255, 255, 0.8);
-    border-radius: 12px; /* Increased border-radius for better rounding */
-    border: 1px solid #fff; /* White border */
+    border-radius: 12px;
+    border: 1px solid #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(8px);
     overflow: hidden;
 }
 
 .picture-section {
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -247,48 +233,14 @@ table, th, td {
 }
 
 .profile-pic {
-    width: 80px; /* Adjust size for scaling */
-    height: 80px; /* Adjust size for scaling */
+    width: 200px; /* Fixed size for profile picture */
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.github-link {
-    margin-top: 10px;
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-}
-
 .details-section {
-    flex: 2;
     padding: 10px;
-}
-
-.details-section h1 {
-    margin: 0;
-    font-size: 18px;
-}
-
-.details-section p {
-    margin: 5px 0;
-}
-
-.details-section a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.details-section a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .id-card {
-        flex-direction: column;
-        width: 90%;
-        height: auto; /* Adjust height for responsive design */
-    }
+    background: #fff;
 }
 
