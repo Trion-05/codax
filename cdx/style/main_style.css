@@ -93,10 +93,7 @@ button{
     color: #7c9bcc;
 }
 
-@font-face {
-    font-family: lemon_days;
-    src: url(./lemon_days.ttf);
-}
+
 
 
 /*SUMMARY CONTENTS*/
@@ -172,7 +169,7 @@ iframe > body {
 
        body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: lemon_days;
 }
 
 
@@ -199,3 +196,8 @@ iframe > body {
 table, th, td {
   border:2px solid white;
   width: 50%;
+
+@font-face {
+    font-family: lemon_days;
+    src: url(./lemon_days.ttf);
+}
