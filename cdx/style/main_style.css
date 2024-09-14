@@ -260,14 +260,12 @@ table, th, td {
 		}
 h2 {
 			font-size: 15px;
-font-family: lemon_days;
 			margin: 5px 0;
 	    color: #a9a9ff;
 			-webkit-text-stroke: 0.1px black;
 		}
 h3 {
 			font-size: 12px;
-font-family: lemon_days;
 			margin: 2.5px 0;
 			font-weight: 300;
 			color: white;
@@ -278,7 +276,6 @@ font-family: lemon_days;
 		}
 p {
 			font-size: 10px;
-font-family: lemon_days;
 			color: white;
 	-webkit-text-stroke: 0.1px black;
 			margin: 2px;
