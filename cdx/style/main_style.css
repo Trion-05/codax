@@ -9,7 +9,6 @@ div.topnav {
   top: 0;
   border-bottom: 0.5px solid white;
   position: fixed;
-  background: rgb(146,146,167);
 background: radial-gradient(circle, rgba(146,146,167,1) 1%, rgba(26,44,68,1) 99%);
   background-size: 200%;
   background-attachment: fixed;
@@ -17,6 +16,11 @@ background: radial-gradient(circle, rgba(146,146,167,1) 1%, rgba(26,44,68,1) 99%
   background-repeat: repeat-y;
 }
 
+
+@font-face {
+    font-family: lemon_days;
+    src: url(./lemon_days.ttf);
+}
 /* Style the links inside the navigation bar */
 .topnav a {
   float: center;
@@ -71,6 +75,11 @@ background: radial-gradient(circle, rgba(146,146,167,1) 1%, rgba(26,44,68,1) 99%
   flex-direction: column;   
 }
 
+
+@font-face {
+    font-family: lemon_days;
+    src: url(./lemon_days.ttf);
+}
 button{
   background-color: #2e334580;
   Color: white;
