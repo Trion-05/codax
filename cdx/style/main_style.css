@@ -88,7 +88,8 @@ background: radial-gradient(circle, rgba(146,146,167,1) 1%, rgba(26,44,68,1) 99%
   position: sticky;
   margin-bottom: 100px;
   display: flex;
-  flex-direction: column;   
+  flex-direction: column;
+padding-bottom: 30px;  
 }
 
 
