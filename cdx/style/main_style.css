@@ -1,15 +1,16 @@
 /*Navigation*/
 div.topnav {
-  background: #FF2D3B55;
+  background-color: rgb(0 0 0 / .5);
+  color: #fff;
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 100%;
+  width: 150%;
   top: 0;
   border-bottom: 0.5px solid white;
   position: fixed;
   background-size: 200%;
   background-attachment: fixed;
-  background-position: center;
+  position: center;
   background-repeat: repeat-y;
 
 }
@@ -143,12 +144,12 @@ details summary::-webkit-details-marker {
     font-size: 12px;
     opacity: 100%;
     font-family: lemon_days;
-    width: 100%;
+    width: 150%;
     height: auto;
     padding-top: 10px;
     padding-bottom: 10px;
-    background: #FF2D3B55;
-    
+    background-color: rgb(0 0 0 / .5);
+  color: #fff;
 
   /*Fonts*/
 
