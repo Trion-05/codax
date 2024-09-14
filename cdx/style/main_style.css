@@ -157,12 +157,8 @@ background-repeat: repeat;
   /*Fonts*/
 }
 @font-face {
-        font-family: duck;
-        src: url(./duck.ttf);
-  
-@font-face {
-      font-family: monday;
-        src: url(./monday.ttf);
+        font-family: lemon_days;
+        src: url(./lemons_days.ttf);
   }
 
 .ft{
