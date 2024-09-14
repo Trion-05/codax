@@ -11,6 +11,10 @@ div.topnav {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   background-clip: padding-box;
+height: 30px;
+padding-bottom: 30px;
+  margin: 0;
+
 }
 
 .footer {
@@ -27,8 +31,8 @@ div.topnav {
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+height:30px
 }
-```
 @font-face {
     font-family: lemon_days;
     src: url(./lemon_days.ttf);
@@ -100,6 +104,9 @@ button{
               inset -5px -5px 10px #454d68;
 }
 
+
+
+  
 
 
 
