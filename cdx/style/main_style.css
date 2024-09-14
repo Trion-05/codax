@@ -1,6 +1,6 @@
 /*Navigation*/
 div.topnav {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -24,7 +24,7 @@ div.topnav {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
