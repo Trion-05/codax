@@ -84,7 +84,7 @@ background: radial-gradient(circle, rgba(146,146,167,1) 1%, rgba(26,44,68,1) 99%
   overflow: scroll;
   height: auto;
   position: sticky;
-  margin-bottom: 150px;
+  margin-bottom: 300px;
   display: flex;
   flex-direction: column
 }
@@ -138,7 +138,7 @@ button{
   padding-right: 30px;
   height: autop;
 font-size; 30px;
-
+margin-bottom: 100px;
 }
 
 details > summary {
