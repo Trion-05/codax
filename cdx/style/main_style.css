@@ -1,6 +1,6 @@
 /*Navigation*/
 div.topnav {
-  background: #2e334580;
+  background: #1a2c44;
   box-shadow: inset 5px 5px 10px #454d68,
             inset -5px -5px 10px #454d68;
   padding-top: 10px;
@@ -9,7 +9,6 @@ div.topnav {
   top: 0;
   border-bottom: 0.5px solid white;
   position: fixed;
-background: radial-gradient(circle, rgba(146,146,167,1) 1%, rgba(26,44,68,1) 99%);
   background-size: 200%;
   background-attachment: fixed;
   background-position: center;
@@ -149,11 +148,9 @@ details summary::-webkit-details-marker {
     height: auto;
     padding-top: 10px;
     padding-bottom: 10px;
-    background: #2e334580;
+    background: #1a2c44;
     box-shadow: inset 5px 5px 5px #454d68,
                 inset -5px -5px 5px #454d68;
-   background: rgb(146,146,167);
-background: radial-gradient(circle, rgba(146,146,167,1) 1%, rgba(26,44,68,1) 99%);
 }
 
   /*Fonts*/
