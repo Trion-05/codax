@@ -34,7 +34,7 @@ main {
   font-family: lemon_days;
   width: 100%;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
