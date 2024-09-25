@@ -133,7 +133,6 @@ margin-bottom: 10px;
   margin-right: 30px;
   height: auto;
   font-size: 20px;
-  margin-bottom: 200px;
   overflow: auto;
 }
 
@@ -178,3 +177,9 @@ table, th, td {
   border: 2px solid white;
   width: 50%;
 }
+table.sm{
+    border: 2px solid white;
+  width: 50%;
+  margin:200px;
+}
+  
