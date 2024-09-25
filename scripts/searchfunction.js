@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function goHome() {
-    window.location.href = 'index.html'; // Redirect to home
+    window.location.href = './index.html'; // Redirect to home
   }
 
   collectContent();
