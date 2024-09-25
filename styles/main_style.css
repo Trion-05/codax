@@ -12,16 +12,11 @@ body {
   background-position: center;
   background-repeat: repeat-y;
   overflow: hidden;
-  margin: 0;
-  padding: 0;
+  padding-bottom: 200px
   font-family: lemon_days;
   color: white;
-}
-
-body{
 display: flex;
   flex-direction: column;
-  margin-bottom: 200px;
   color: white;
   overflow-y: auto;
   height: 100%;
@@ -179,7 +174,6 @@ table, th, td {
 }
 table.sm{
     border: 2px solid white;
-  width: 50%;
-  margin:200px;
+  margin-bottom:100px;
 }
   
