@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function goHome() {
-    window.location.href = './index.html'; // Redirect to home
+    window.location.href = 'https://github.com/Trion-05/codax/blob/f23e15dcdc2469f7e7edb68f22d8b4f7c10b8d18/index.html; // Redirect to home
   }
 
   collectContent();
