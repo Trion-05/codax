@@ -34,9 +34,9 @@ text-decoration: none;
   position: fixed;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  margin: 10;
   z-index: 10;
 }
-
 .topnav a {
   float: center;
   color: white;
@@ -47,20 +47,18 @@ text-decoration: none;
   opacity: 100%;
   font-family: lemon_days;
 }
-
 .topnav a:hover {
   background-color: #1df5e350;
   color: white;
 }
-
 .topnav a.active {
   text-decoration: underline;
   text-underline-offset: 5px;
   color: white;
 }
-
 .footer {
   background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
   float: center;
 color: white;
 text-align: center;
@@ -72,6 +70,7 @@ text-decoration: none;
   position: fixed;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  margin: 5;
   z-index: 10;
 }
 
