@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const searchButton = document.getElementById('searchButton');
   const homeButton = document.getElementById('homeButton');
   const searchedWordDisplay = document.getElementById('searchedWordDisplay'); // New element for displaying searched word
-
   function collectContent() {
     const links = document.querySelectorAll('a');
     contentList.innerHTML = '';
@@ -20,17 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
       contentList.appendChild(li);
     });
   }
-
   function filterContent() {
     const filter = searchInput.value.toLowerCase();
     const items = contentList.getElementsByTagName('li');
     dropdownList.innerHTML = ''; // Clear dropdown
-
     if (filter.trim() === '') {
       dropdown.style.display = 'none'; // Hide if empty
       return;
     }
-
     Array.from(items).forEach(item => {
       const text = item.textContent || item.innerText;
       if (text.toLowerCase().includes(filter)) {
@@ -38,15 +34,12 @@ document.addEventListener('DOMContentLoaded', () => {
         dropdownList.appendChild(dropdownItem);
       }
     });
-
     dropdown.style.display = dropdownList.childElementCount > 0 ? 'block' : 'none'; // Show/hide
   }
-
   function performSearch() {
     const searchTerm = searchInput.value.trim();
     if (searchTerm !== '') {
       searchedWordDisplay.textContent = `Searched for: ${searchTerm}`;
-
       // Display the actual <a> elements
       filterContent(); // Filter content
       dropdown.style.display = 'block'; // Show dropdown
@@ -55,13 +48,10 @@ document.addEventListener('DOMContentLoaded', () => {
       dropdown.style.display = 'none'; // Hide dropdown if no search term
     }
   }
-
   function goHome() {
-    window.location.href = 'https://github.com/Trion-05/codax/blob/f23e15dcdc2469f7e7edb68f22d8b4f7c10b8d18/index.html; // Redirect to home
+    window.location.href = 'index.html'; // Redirect to home
   }
-
   collectContent();
-
   searchInput.addEventListener('input', filterContent); // Update dropdown
   searchButton.addEventListener('click', performSearch); // Search button
   homeButton.addEventListener('click', goHome); // Home button
