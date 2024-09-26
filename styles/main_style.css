@@ -99,7 +99,6 @@ button {
   padding: 15px 30px; /* Combined padding */
   margin: 30px; /* Combined margins */
   font-size: 20px;
-  max-height: 300px; 
 }
 
 details > summary {
