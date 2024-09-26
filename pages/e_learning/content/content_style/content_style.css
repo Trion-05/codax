@@ -1,5 +1,4 @@
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -181,8 +180,4 @@ iframe > body {
   margin: 0;
 }
 
-table, th, td {
-  border: 2px solid white;
-  width: 50%;
-}
 
