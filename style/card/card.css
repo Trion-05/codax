@@ -1,6 +1,4 @@
 .flex {
-    
-    margin: 10px;
     text-align: center;
 display: flex;
     justify-content: center;
@@ -20,17 +18,6 @@ flex-direction: row;
                     background-color: #1f1f1f;
                     border-radius: 5px;
                     position: relative;
-					
-z-index:19;
- 1display: flex;
-    justify-content: center;
-flex-direction: row;
-}
-
-@media (max-width: 800px) {
-  .id-card-holder {
-    flex-direction: column;
-  }
 }
                 
 
