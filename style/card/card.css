@@ -1,12 +1,19 @@
-.flex{
-	display: flex;
-	margin: 10px;
-	text-align: center;
-	justify-content: center;
-	flex-shrink: 1;
-	flex-grow: 5;
-	flex-basis: 200px;
+.flex {
+    display: flex;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    flex-shrink: 1;
+    flex-grow: 5; 
+    flex-basis: 200px;
 }
+
+@media (max-width: 768px) {
+    .flex {
+        flex-grow: 1; 
+    }
+}
+
 	
 .id-card-holder {
                         width: 225px;
