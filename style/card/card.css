@@ -3,17 +3,14 @@
     margin: 10px;
     text-align: center;
     justify-content: center;
-    flex-shrink: 1;
-    flex-grow: 5; 
-    flex-basis: 200px;
+flex-direction: row;
 }
 
-@media (max-width: 768px) {
-    .flex {
-        flex-grow: 1; 
-    }
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
 }
-
 	
 .id-card-holder {
                         width: 225px;
