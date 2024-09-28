@@ -3,8 +3,8 @@
 	margin: 10px;
 	text-align: center;
 	justify-content: center;
-	flex-shrinK: 1;
-	flex-max: 5;
+	flex-shrink: 1;
+	flex-grow: 5;
 }
 	
 .id-card-holder {
