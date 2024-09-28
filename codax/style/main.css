@@ -1,0 +1,166 @@
+.topnav {
+			float: center;
+			color: white;
+			text-align: center center;
+			padding: 14px 16px;
+			background-color: rgba(0, 0, 0, 0.2);
+			left: 0;
+			top: 0;
+			border-bottom: 0.5px solid white;
+			position: fixed;
+			backdrop-filter: blur(10px);
+			-webkit-backdrop-filter: blur(10px);
+			z-index: 10;
+			width: 100%;
+}
+.topnav a {
+			float: center;
+			color: white;
+			text-align: center;
+			padding: 5px 20px;
+			text-decoration: none;
+			font-size: 12px;
+			opacity: 100%;
+			font-family: lemon_days;
+			  -webkit-text-stroke: 1px black;
+}
+
+.topnav a:hover {
+  background-color: #1df5e350;
+  color: white;
+}
+
+.topnav a.active {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+
+@font-face {
+  font-family: lemon_days;
+  src: url(./lemon_days.ttf);
+}
+body {
+  background: rgb(146, 146, 167);
+  background: radial-gradient(circle, rgba(146, 146, 167, 1) 1%, rgba(26, 44, 68, 1) 99%);
+  background-attachment: fixed;
+  background-position: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: lemon_days;
+  display: flex;
+  flex-direction: column;
+  color: white;
+     -webkit-text-stroke: 1px black;
+  padding-top: 50px; 
+  padding-bottom: 100px;
+
+}
+ 
+	  
+  .alt_logo {
+  float: center;
+}
+
+.logo_main {
+  display: block;
+  margin: 5pxx;
+  height: 200px;
+  width: 200px;  
+}
+
+.hl {
+  font-family: lemon_days;
+  -webkit-text-stroke: 1px black;
+  color: #a9a9bf;
+}
+
+button{
+  background-color: #2e334580;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  font-family: lemon_days;
+  box-shadow: inset 5px 5px 10px #454d68, inset -5px -5px 10px #454d68;
+margin: 10px 10px 10px 10px;
+border: 1px solid white;
+font-family: lemon_days;
+}
+  
+ button.tools{
+  background-color: #2e334580;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  font-family: lemon_days;
+  box-shadow: inset 5px 5px 10px #454d68, inset -5px -5px 10px #454d68;
+margin: 10px 10px 10px 10px;
+border: 1px solid white;
+font-family: lemon_days;
+font-size: 10px;
+width: 100px;
+height: 100px;
+border-radius: 25px;
+}
+
+button.tools:hover{
+  background-color: #1df5e350;
+  color: white;
+  	
+}
+
+
+footer {
+			float: center;
+			color: white;
+			text-align: center center;
+			padding: 14px 16px;
+			background-color: rgba(0, 0, 0, 0.2);
+			left: 0;
+			bottom: 0;
+			border-top: 0.5px solid white;
+			backdrop-filter: blur(10px);
+			-webkit-backdrop-filter: blur(10px);
+			width: 100%;
+			position: fixed;
+z-index: 10;
+}
+.svg{
+	width:60px;
+	height: 60px;
+	filter: invert(2);
+}
+details > summary {
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+  -webkit-text-stroke: 1px black;
+}
+
+.sm {
+  display: block;
+  list-style-type: none;
+  font-family: lemon_days;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  height: auto;
+  font-size: 20px;
+  margin-bottom: 30px;
+  overflow: auto;
+}
+
+.embed,.iframe{
+	border: 2x solid black;
+	margin-left: 50px;
+	margin-right: 50px;
+	width 200px;
+	position: center;
+	
+}
