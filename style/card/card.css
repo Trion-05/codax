@@ -1,7 +1,8 @@
 .flex {
-    display: flex;
+    
     margin: 10px;
     text-align: center;
+display: flex;
     justify-content: center;
 flex-direction: row;
 }
@@ -20,8 +21,18 @@ flex-direction: row;
                     border-radius: 5px;
                     position: relative;
 					
-z-index: 1
-                }
+z-index:19;
+ 1display: flex;
+    justify-content: center;
+flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+                
 
 .id-card {
 
