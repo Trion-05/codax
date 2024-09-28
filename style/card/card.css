@@ -8,7 +8,7 @@ flex-direction: row;
 }
 
 @media (max-width: 800px) {
-  .flex-container {
+  .flex {
     flex-direction: column;
   }
 }
@@ -28,7 +28,7 @@ flex-direction: row;
 }
 
 @media (max-width: 800px) {
-  .flex-container {
+  .id-card-holder {
     flex-direction: column;
   }
 }
