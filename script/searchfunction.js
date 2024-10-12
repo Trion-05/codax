@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
       filterContent(); // Filter content
       dropdown.style.display = 'block'; // Show dropdown
     } else {
-      searchedWordDisplay.textContent = ''; // Clear the display if no search term
+      searchedWordDisplay.textContent = `Looking for: ${searchTerm}`,''; // Clear the display if no search term
       dropdown.style.display = 'none'; // Hide dropdown if no search term
     }
   }

@@ -1,15 +1,21 @@
 .flex {
-    text-align: center;
-display: flex;
-    justify-content: center;
-flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  flex: 0 0 20%;
+  box-sizing: border-box;
 }
 
 @media (max-width: 800px) {
   .flex {
     flex-direction: column;
+    align-items: center;
+    flex: 0 0 auto;
+    width: 100%;
   }
 }
+
 	
 .id-card-holder {
                         width: 225px;
