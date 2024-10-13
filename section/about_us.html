@@ -8,35 +8,35 @@
     <link rel="stylesheet" href="../style/card/card.css" />
     <style>
         .animated-section {
-            border: 2px solid transparent; /* Initial transparent border */
-            transition: border 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+            border: 2px solid transparent;
+            transition: border 0.3s ease, background-color 0.3s ease;
             padding: 10px;
             margin: 10px 0;
         }
 
         .summary {
-            cursor: pointer; /* Change cursor to pointer */
+            cursor: pointer;
             padding: 10px;
-            background-color: #f0f0f0; /* Background color (light grey, adjust as needed) */
-            border-radius: 5px; /* Rounded corners */
-            transition: background-color 0.3s ease; /* Smooth transition */
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
 
         .summary:hover {
-            background-color: #e0e0e0; /* Change color on hover */
+            background-color: #e0e0e0;
         }
 
         .animated-section:hover {
-            border: 2px solid #007bff; /* Change border color on hover (adjust to match your website) */
+            border: 2px solid #007bff;
         }
 
         .animated-section:focus-within {
-            border: 2px solid #007bff; /* Border on focus */
+            border: 2px solid #007bff;
         }
 
         .animated-section.expanded {
-            border: 2px solid #007bff; /* Border color when expanded */
-            background-color: #fff; /* Background color when expanded */
+            border: 2px solid #007bff;
+            background-color: #fff;
         }
 
         @keyframes expand {
@@ -203,12 +203,11 @@
     <script>
         document.querySelectorAll('.animated-section').forEach(section => {
             section.addEventListener('click', function () {
-                this.classList.toggle('expanded'); // Toggle expanded class
-                // Optionally, animate the section
+                this.classList.toggle('expanded');
                 this.classList.add('animate-expand');
                 setTimeout(() => {
                     this.classList.remove('animate-expand');
-                }, 500); // Remove animation class after it finishes
+                }, 500);
             });
         });
     </script>
