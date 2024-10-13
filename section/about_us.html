@@ -348,14 +348,66 @@
         <p class="sm">
             &#160; &#160; If you share our passion for technology and community, we invite you to join us! Together, we can create a vibrant and supportive environment for all tech enthusiasts.
             <br><br>
-          <center>
-    <button style="padding: 8px 16px; background-color: white; color: #007bff; border: 2px solid #007bff; border-radius: 5px; cursor: pointer; margin: 5px;">
-        <a href="https://discord.gg/VGFBMdSGr7" style="text-decoration:none; color:#007bff;">Join Us on Discord</a>
-    </button>
-    <button style="padding: 8px 16px; background-color: white; color: #007bff; border: 2px solid #007bff; border-radius: 5px; cursor: pointer; margin: 5px;">
-        <a href="https://www.facebook.com/groups/codax" style="text-decoration:none; color:#007bff;">Join Us on Facebook</a>
-    </button>
+         <center>
+    <div class="custom-button">
+        <a href="https://discord.gg/VGFBMdSGr7" style="text-decoration:none;">
+            <span>Join Us on Discord</span>
+        </a>
+    </div>
+    <div class="custom-button facebook-button">
+        <a href="https://www.facebook.com/groups/codax" style="text-decoration:none;">
+            <span>Join Us on Facebook</span>
+        </a>
+    </div>
 </center>
+
+<style>
+.custom-button, .facebook-button {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background: white;
+    color: transparent; /* No color for text */
+    cursor: pointer;
+    margin: 5px;
+    position: relative;
+    text-align: center;
+    transition: background 0.3s ease;
+    font-size: 16px; /* Optional: Adjust font size */
+    overflow: hidden; /* Ensures hover effects stay within button */
+}
+
+.custom-button:hover, .facebook-button:hover {
+    background: rgba(0, 123, 255, 0.1); /* Light blue background on hover */
+    color: white; /* Text color on hover */
+    border: 2px solid #007bff; /* Border color on hover */
+}
+
+.custom-button span, .facebook-button span {
+    position: relative;
+    z-index: 1;
+    color: #007bff; /* Blue text color for both buttons */
+    text-shadow: none; /* Remove text outline */
+}
+
+.custom-button::after, .facebook-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+
+.custom-button:hover::after, .facebook-button:hover::after {
+    opacity: 0; /* Fade effect on hover */
+}
+</style>
         </p>
     </details>
 
