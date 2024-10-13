@@ -1,67 +1,116 @@
 <!DOCTYPE html>
 <html>
- <!--Head-->
-	<head>
-        <meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>CODAX OFFICIAL</title>
-		<link rel="stylesheet" href="../style/main.css" />
-		<link rel="stylesheet" href="../style/card/card.css" />
-    </head>
-   
-    <center>
-			<div class="topnav">
-                  <a href="../index.html">Home</a>
-                  <a href="./featured.html">Featured</a>
-                  <a class="active" href="./about_us.html">About Us</a>     
-			</div>
-    </center>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CODAX OFFICIAL</title>
+    <link rel="stylesheet" href="../style/main.css" />
+    <link rel="stylesheet" href="../style/card/card.css" />
+    <style>
+        .animated-section {
+            border: 2px solid transparent;
+            transition: border 0.3s ease, background-color 0.3s ease;
+            padding: 10px;
+            margin: 10px 0;
+        }
 
- <!--Content-->
-	<body>
-			<br><br>
-				<center><img class="logo_main" src="../img/logo.png"></center>
-		<div class="body">
-				<center style="font-size:40px">CODAX</center>
-		</div>
+        .summary {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
 
-		<details>
-				<summary><center class="hl" style="font-size:20px">ABOUT US</center></summary>
-						<p class="sm"> &#160; &#160; CODAX is a dynamic tech community founded by 2 passionate individuals aiming to create an environment where tech enthusiasts can learn, collaborate, and grow together. Our goal is to provide a platform that supports continuous improvement, innovation, and success in the rapidly evolving world of technology. CODAX stands as a beacon for those who seek to expand their knowledge, connect with peers, and make a significant impact in the tech industry.<br>
-									<br>&#160; &#160;Founded in 2024 by a group of tech enthusiasts and computer science students from the Cotabato region. Recognizing the limited tech opportunities in their local area, the founders envisioned a community that would foster collaboration, mentorship, and innovation. CODAX was created to fill that gap, offering a supportive and engaging environment for like-minded individuals to connect, learn, and inspire each other.<br>
-									<br>&#160; &#160;  CODAX thrives as a hub for students mostly and tech enthusiasts to collaborate, share knowledge, and elevate one another. Its playful, coding-inspired duck logo reflects the community’s fun and approachable nature. CODAX remains committed to adapting and innovating alongside its members, ensuring it remains an inspiring community in the tech landscape, locally and globally. 
-						</p>
-		</details>
+        .summary:hover {
+            background-color: #e0e0e0;
+        }
 
-		<details ><summary><center class="hl" style="font-size:20px">OUR MISSION</center></summary>
-			<p class="sm"> &#160; &#160; “To edify, fortify, and amplify every tech individual, equipping them with knowledge, resilience, and visibility to thrive and lead in the dynamic tech industry.”
-		</details>
-		<details><summary><center class="hl" style="font-size:20px">OUR VISION</center></summary>
-		<p class="sm"> &#160; &#160; “A tech community that shall continually inspire each other, aspire to greatness, and desire meaningful growth and success in the ever-evolving landscape of technology.”<br>
-		<br>&#160; &#160;CODAX started with the vision of building a community that "inspires, aspires, and desires." It was meant to be more than just a gathering of tech enthusiasts; the goal was to create an environment where continuous learning, innovation, and excellence are at the forefront, with members encouraging one another to grow in their respective fields.
-	</p>
-	</details>
+        .animated-section:hover {
+            border: 2px solid #007bff;
+        }
 
+        .animated-section:focus-within {
+            border: 2px solid #007bff;
+        }
 
-			<details><summary><center class="hl" style="font-size:20px">CORE VALUES</center></summary>
-		<center><p class="sm">
-		<b class="hl">C</b>OLLABORATION:  Building strong bonds and partnerships within the community to achieve common goals.<br><br>
+        .animated-section.expanded {
+            border: 2px solid #007bff;
+            background-color: #fff;
+        }
 
-		<b class="hl">O</b>PPORTUNITY: Creating avenues for learning, growth, and success in the tech world.<br><br>
+        @keyframes expand {
+            0% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+            100% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+        }
 
-		<b class="hl">D</b>EDICATION: Commitment to continuous improvement and excellence in all pursuits.<br><br>
+        .animate-expand {
+            animation: expand 0.5s forwards;
+        }
+    </style>
+</head>
 
-		<b class="hl">A</b>DVANCEMENT: Pushing boundaries and striving for progress in technology and personal growth.<br><br>
+<center>
+    <div class="topnav">
+        <a href="../index.html">Home</a>
+        <a href="./featured.html">Featured</a>
+        <a class="active" href="./about_us.html">About Us</a>     
+    </div>
+</center>
 
-		E<b class="hl">X</b>CELLENCE: Delivering the highest quality in everything we do, with a focus on both technical and personal achievements. <br></center>
-	</p>
-	</details>
+<body>
+    <br><br>
+    <center><img class="logo_main" src="../img/logo.png"></center>
+    <div class="body">
+        <center style="font-size:40px">CODAX</center>
+    </div>
 
+    <details class="animated-section">
+        <summary class="summary">ABOUT US</summary>
+        <p class="sm">
+            &#160; &#160; CODAX is a dynamic tech community founded by 2 passionate individuals aiming to create an environment where tech enthusiasts can learn, collaborate, and grow together. Our goal is to provide a platform that supports continuous improvement, innovation, and success in the rapidly evolving world of technology. CODAX stands as a beacon for those who seek to expand their knowledge, connect with peers, and make a significant impact in the tech industry.<br><br>
+            &#160; &#160; Founded in 2024 by a group of tech enthusiasts and computer science students from the Cotabato region. Recognizing the limited tech opportunities in their local area, the founders envisioned a community that would foster collaboration, mentorship, and innovation. CODAX was created to fill that gap, offering a supportive and engaging environment for like-minded individuals to connect, learn, and inspire each other.<br><br>
+            &#160; &#160; CODAX thrives as a hub for students mostly and tech enthusiasts to collaborate, share knowledge, and elevate one another. Its playful, coding-inspired duck logo reflects the community’s fun and approachable nature. CODAX remains committed to adapting and innovating alongside its members, ensuring it remains an inspiring community in the tech landscape, locally and globally. 
+        </p>
+    </details>
 
-		<details ><summary><center class="hl" style="font-size:20px">THE COMMUNITY</center></summary>
+    <details class="animated-section">
+        <summary class="summary">OUR MISSION</summary>
+        <p class="sm"> 
+            &#160; &#160; “To edify, fortify, and amplify every tech individual, equipping them with knowledge, resilience, and visibility to thrive and lead in the dynamic tech industry.”
+        </p>
+    </details>
 
-		<center style="font-size:20px">ADMINS</center>
-		
+    <details class="animated-section">
+        <summary class="summary">OUR VISION</summary>
+        <p class="sm"> 
+            &#160; &#160; “A tech community that shall continually inspire each other, aspire to greatness, and desire meaningful growth and success in the ever-evolving landscape of technology.”<br><br>
+            &#160; &#160; CODAX started with the vision of building a community that "inspires, aspires, and desires." It was meant to be more than just a gathering of tech enthusiasts; the goal was to create an environment where continuous learning, innovation, and excellence are at the forefront, with members encouraging one another to grow in their respective fields.
+        </p>
+    </details>
+
+    <details class="animated-section">
+        <summary class="summary">CORE VALUES</summary>
+        <center>
+            <p class="sm">
+                <b class="hl">C</b>OLLABORATION: Building strong bonds and partnerships within the community to achieve common goals.<br><br>
+                <b class="hl">O</b>PPORTUNITY: Creating avenues for learning, growth, and success in the tech world.<br><br>
+                <b class="hl">D</b>EDICATION: Commitment to continuous improvement and excellence in all pursuits.<br><br>
+                <b class="hl">A</b>DVANCEMENT: Pushing boundaries and striving for progress in technology and personal growth.<br><br>
+                E<b class="hl">X</b>CELLENCE: Delivering the highest quality in everything we do, with a focus on both technical and personal achievements.
+            </p>
+        </center>
+    </details>
+
+   <details class="animated-section">
+        <summary class="summary">THE COMMUNITY</summary>
+        <center style="font-size:20px">ADMINS</center>
 		<center>
 		<div class="flex">
 
@@ -82,13 +131,13 @@
                         <p><strong>CODAX</strong><br>THE QUACKY COMPUTING<br>TECHNOLOGY COMMUNITY<p>
                 </div>
         </div>
-	
-                    
-                         
 
-                 
 
-				 
+
+
+
+
+
         <div class="id-card-holder">
                 <div class="id-card">
                         <div class="header">
@@ -106,15 +155,15 @@
                         <p><strong>CODAX</strong><br>THE QUACKY COMPUTING<br>TECHNOLOGY COMMUNITY<p>
                 </div>
         </div>
-                      
-					  
-					  
+
+
+
 					  </div>
-					  
+
                          <br>
-										
-										
-										
+
+
+
 										<center style="font-size:20px">CORE TEAM AND THE ASSISTANTS</center>
                                       <div class="flex">    									  
         <div class="id-card-holder">
@@ -156,7 +205,7 @@
 								<hr>
 								<p><strong>CODAX</strong><br>THE QUACKY COMPUTING<br>TECHNOLOGY COMMUNITY<p>
 				</div>
-				
+
         </div>   
 	<br>
 	 <div class="id-card-holder">
@@ -178,7 +227,7 @@
 						</div>
 
                 <br> 
-		
+
 		<div class="id-card-holder">
                 <div class="id-card">
                         <div class="header">
@@ -195,7 +244,7 @@
 								<p><strong>CODAX</strong><br>THE QUACKY COMPUTING<br>TECHNOLOGY COMMUNITY<p>
 				</div>
         </div>
-                       
+
 	<br>
 	 <div class="id-card-holder">
                 <div class="id-card">
@@ -234,7 +283,7 @@
 						</div>
 						</div>
 
-  
+
 
                 <br> 				
         <div class="id-card-holder">
@@ -287,21 +336,85 @@
       <h3>JIAAS003</h3>
                         <hr>
                         <p><strong>CODAX</strong><br>THE QUACKY COMPUTING<br>TECHNOLOGY COMMUNITY<p>
-						</div>
-						</div>
+     </div>
+        </div> 							  
+    </div>
+    </div>
+        </center>
+    </details>
 
-                <br> 
-						</div>        
+    <details class="animated-section">
+        <summary class="summary">JOIN US</summary>
+        <p class="sm">
+            &#160; &#160; If you share our passion for technology and community, we invite you to join us! Together, we can create a vibrant and supportive environment for all tech enthusiasts.
+            <br><br>
+         <center>
+    <div class="custom-button">
+        <a href="https://discord.gg/VGFBMdSGr7" style="text-decoration:none;">
+            <span>Join Us on Discord</span>
+        </a>
+    </div>
+    <div class="custom-button facebook-button">
+        <a href="https://www.facebook.com/groups/codax" style="text-decoration:none;">
+            <span>Join Us on Facebook</span>
+        </a>
+    </div>
+</center>
 
-						</details>
+<style>
+.custom-button, .facebook-button {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background: white;
+    color: transparent; /* No color for text */
+    cursor: pointer;
+    margin: 5px;
+    position: relative;
+    text-align: center;
+    transition: background 0.3s ease;
+    font-size: 16px; /* Optional: Adjust font size */
+    overflow: hidden; /* Ensures hover effects stay within button */
+}
 
-						</center>
-						</body>
-						<!--footer-->
-						<footer>
+.custom-button:hover, .facebook-button:hover {
+    background: rgba(0, 123, 255, 0.1); /* Light blue background on hover */
+    color: white; /* Text color on hover */
+    border: 2px solid #007bff; /* Border color on hover */
+}
 
+.custom-button span, .facebook-button span {
+    position: relative;
+    z-index: 1;
+    color: #007bff; /* Blue text color for both buttons */
+    text-shadow: none; /* Remove text outline */
+}
 
-						<center>CODAX OFFICIAL WEBSITE<br><center style="font-size: 10px" class="hl"> Since 2024</center>
-					</center>
-				</footer>
-		</html>
+.custom-button::after, .facebook-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+
+.custom-button:hover::after, .facebook-button:hover::after {
+    opacity: 0; /* Fade effect on hover */
+}
+</style>
+        </p>
+    </details>
+
+    <footer>
+        <center>
+            <p>© 2024 CODAX - All Rights Reserved</p>
+        </center>
+    </footer>
+</body>
+</html>
