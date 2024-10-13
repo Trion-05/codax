@@ -6,6 +6,54 @@
     <title>CODAX OFFICIAL</title>
     <link rel="stylesheet" href="../style/main.css" />
     <link rel="stylesheet" href="../style/card/card.css" />
+    <style>
+        .animated-section {
+            border: 2px solid transparent; /* Initial transparent border */
+            transition: border 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .summary {
+            cursor: pointer; /* Change cursor to pointer */
+            padding: 10px;
+            background-color: #f0f0f0; /* Background color (light grey, adjust as needed) */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+
+        .summary:hover {
+            background-color: #e0e0e0; /* Change color on hover */
+        }
+
+        .animated-section:hover {
+            border: 2px solid #007bff; /* Change border color on hover (adjust to match your website) */
+        }
+
+        .animated-section:focus-within {
+            border: 2px solid #007bff; /* Border on focus */
+        }
+
+        .animated-section.expanded {
+            border: 2px solid #007bff; /* Border color when expanded */
+            background-color: #fff; /* Background color when expanded */
+        }
+
+        @keyframes expand {
+            0% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+            100% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+        }
+
+        .animate-expand {
+            animation: expand 0.5s forwards;
+        }
+    </style>
 </head>
 
 <center>
@@ -23,8 +71,8 @@
         <center style="font-size:40px">CODAX</center>
     </div>
 
-    <details>
-        <summary><center class="hl" style="font-size:20px">ABOUT US</center></summary>
+    <details class="animated-section">
+        <summary class="summary">ABOUT US</summary>
         <p class="sm">
             &#160; &#160; CODAX is a dynamic tech community founded by 2 passionate individuals aiming to create an environment where tech enthusiasts can learn, collaborate, and grow together. Our goal is to provide a platform that supports continuous improvement, innovation, and success in the rapidly evolving world of technology. CODAX stands as a beacon for those who seek to expand their knowledge, connect with peers, and make a significant impact in the tech industry.<br><br>
             &#160; &#160; Founded in 2024 by a group of tech enthusiasts and computer science students from the Cotabato region. Recognizing the limited tech opportunities in their local area, the founders envisioned a community that would foster collaboration, mentorship, and innovation. CODAX was created to fill that gap, offering a supportive and engaging environment for like-minded individuals to connect, learn, and inspire each other.<br><br>
@@ -32,23 +80,23 @@
         </p>
     </details>
 
-    <details>
-        <summary><center class="hl" style="font-size:20px">OUR MISSION</center></summary>
+    <details class="animated-section">
+        <summary class="summary">OUR MISSION</summary>
         <p class="sm"> 
             &#160; &#160; “To edify, fortify, and amplify every tech individual, equipping them with knowledge, resilience, and visibility to thrive and lead in the dynamic tech industry.”
         </p>
     </details>
 
-    <details>
-        <summary><center class="hl" style="font-size:20px">OUR VISION</center></summary>
+    <details class="animated-section">
+        <summary class="summary">OUR VISION</summary>
         <p class="sm"> 
             &#160; &#160; “A tech community that shall continually inspire each other, aspire to greatness, and desire meaningful growth and success in the ever-evolving landscape of technology.”<br><br>
             &#160; &#160; CODAX started with the vision of building a community that "inspires, aspires, and desires." It was meant to be more than just a gathering of tech enthusiasts; the goal was to create an environment where continuous learning, innovation, and excellence are at the forefront, with members encouraging one another to grow in their respective fields.
         </p>
     </details>
 
-    <details>
-        <summary><center class="hl" style="font-size:20px">CORE VALUES</center></summary>
+    <details class="animated-section">
+        <summary class="summary">CORE VALUES</summary>
         <center>
             <p class="sm">
                 <b class="hl">C</b>OLLABORATION: Building strong bonds and partnerships within the community to achieve common goals.<br><br>
@@ -60,8 +108,8 @@
         </center>
     </details>
 
-    <details>
-        <summary><center class="hl" style="font-size:20px">THE COMMUNITY</center></summary>
+    <details class="animated-section">
+        <summary class="summary">THE COMMUNITY</summary>
         <center style="font-size:20px">ADMINS</center>
 
         <center>
@@ -141,98 +189,28 @@
                     <img src="../img/alt_logo.png">
                 </div>
                 <div class="photo">
-                    <img src="../img/logo.png" alt="Steve" class="profile-pic">
-                    <br>
+                    <img src="https://avatars.githubusercontent.com/4thofJuly" alt="JULIAN" class="profile-pic">
+                    <h2>JULIAN a.k.a FourthOfJuly</h2>
                 </div>
-                <h2>Steve</h2>
-                <h3><b>Front-End<br>Developer</b></h3>
-                <h3>SFSCT003</h3>
-                <hr>
-                <p><strong>CODAX</strong><br>THE QUACKY COMPUTING<br>TECHNOLOGY COMMUNITY</p>
-            </div>
-        </div>
-
-        <div class="id-card-holder">
-            <div class="id-card">
-                <div class="header">
-                    <img src="../img/alt_logo.png">
-                </div>
-                <div class="photo">
-                    <img src="https://avatars.githubusercontent.com/Zircon13" alt="Jeruss" class="profile-pic">
-                    <h2>Jeruss</h2>
-                </div>
-                <h3><b>PHP<br>Programmer</b></h3>
-                <h3>JDDCT004</h3>
-                <hr>
-                <p><strong>CODAX</strong><br>THE QUACKY COMPUTING<br>TECHNOLOGY COMMUNITY</p>
-            </div>
-        </div>
-
-        <div class="id-card-holder">
-            <div class="id-card">
-                <div class="header">
-                    <img src="../img/alt_logo.png">
-                </div>
-                <div class="photo">
-                    <img src="../img/logo.png" alt="Scy" class="profile-pic">
-                    <br>
-                </div>
-                <h2>Scy</h2>
-                <h3><b>Graphics<br>Designer</b></h3>
-                <h3>SGDCT006</h3>
-                <hr>
-                <p><strong>CODAX</strong><br>THE QUACKY COMPUTING<br>TECHNOLOGY COMMUNITY</p>
-            </div>
-        </div>
-
-        <div class="id-card-holder">
-            <div class="id-card">
-                <div class="header">
-                    <img src="../img/alt_logo.png">
-                </div>
-                <div class="photo">
-                    <img src="https://avatars.githubusercontent.com/Etherrz" alt="Rayyan" class="profile-pic">
-                    <h2>Rayyan</h2>
-                </div>
-                <h3><b>Graphics<br>Designer</b></h3>
-                <h3>RVTCT005</h3>
+                <h3><b>Front-End Developer<br>Discord Moderator</b></h3>
+                <h3>JULCT003</h3>
                 <hr>
                 <p><strong>CODAX</strong><br>THE QUACKY COMPUTING<br>TECHNOLOGY COMMUNITY</p>
             </div>
         </div>
     </details>
+    
+    <script>
+        document.querySelectorAll('.animated-section').forEach(section => {
+            section.addEventListener('click', function () {
+                this.classList.toggle('expanded'); // Toggle expanded class
+                // Optionally, animate the section
+                this.classList.add('animate-expand');
+                setTimeout(() => {
+                    this.classList.remove('animate-expand');
+                }, 500); // Remove animation class after it finishes
+            });
+        });
+    </script>
 </body>
-
-<footer>
-    <center>
-        CODAX OFFICIAL WEBSITE<br>
-        <center style="font-size: 10px" class="hl">Since 2024</center>
-    </center>
-</footer>
-
-<style>
-    @keyframes expand {
-        0% {
-            transform: scale(1);
-            opacity: 0.5;
-        }
-        100% {
-            transform: scale(1.1);
-            opacity: 1;
-        }
-    }
-
-    .animate-expand {
-        animation: expand 0.5s forwards;
-    }
-</style>
-
-<script>
-    function animateSection(element) {
-        element.classList.add("animate-expand");
-        setTimeout(() => {
-            element.classList.remove("animate-expand");
-        }, 500);
-    }
-</script>
 </html>
