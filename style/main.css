@@ -146,8 +146,8 @@ details summary::-webkit-details-marker {
   -webkit-text-stroke: 1px black;
   text-align: justify;
   text-justify: inter-word;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
   margin-left: 30px;
   margin-right: 30px;
   height: auto;
@@ -171,6 +171,15 @@ details summary::-webkit-details-marker {
             transition: border 0.3s ease, background-color 0.3s ease;
             padding: 10px;
             margin: 10px 0;
+	  background-color: #2e334580;
+  	color: white;
+  	-webkit-text-stroke: 1px black;
+	  font-family: lemon_days;
+	  box-shadow: inset 5px 5px 10px #454d68, inset -5px -5px 10px #454d68;
+	margin: 10px 10px 10px 10px;
+	border: 1px solid white;
+	font-family: lemon_days;
+	width: 500px;
         }
 
         .summary {
