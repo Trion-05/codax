@@ -177,7 +177,7 @@ details summary::-webkit-details-marker {
         .summary {
             cursor: pointer;
             padding: 10px;
-          position: center;
+          float: center;
             border-radius: 5px;
             transition: background-color 0.3s ease;
 	-webkit-text-stroke: 1px black;
@@ -187,7 +187,10 @@ details summary::-webkit-details-marker {
 	border: 1px solid white;
 		width: 500px;
 	}
-	
+	 @media query(max-width: 800px){
+		 .summary{
+			 width: 300px;
+		 }
 
 
         .summary:hover {
