@@ -176,8 +176,8 @@ details summary::-webkit-details-marker {
 
         .summary {
             cursor: pointer;
-            padding-left:10px;
-padding-right:10px;
+            padding-left:5px;
+padding-right:5px;
           float: center;
             border-radius: 5px;
             transition: background-color 0.3s ease;
