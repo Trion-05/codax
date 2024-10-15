@@ -189,8 +189,9 @@ details summary::-webkit-details-marker {
 	}
 	 @media (max-width: 800px){
 		 .summary{
-			 width: 150px;
+			 width: 200px;
 		 }
+}
 
 
         .summary:hover {
