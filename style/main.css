@@ -185,13 +185,9 @@ details summary::-webkit-details-marker {
 	  box-shadow: inset 5px 5px 10px #454d68, inset -5px -5px 10px #454d68;
 	margin: 10px 20px 10px 20px;
 	border: 1px solid white;
-		width: 500px;
+		width: 70%;
 	}
-	 @media (max-width: 800px){
-		 .summary{
-			 width: 200px;
-		 }
-}
+	
 
 
         .summary:hover {
