@@ -176,7 +176,8 @@ details summary::-webkit-details-marker {
 
         .summary {
             cursor: pointer;
-            padding: 10px 5px 10px 5px;
+            padding-left:10px;
+padding-right:10px;
           float: center;
             border-radius: 5px;
             transition: background-color 0.3s ease;
@@ -185,7 +186,6 @@ details summary::-webkit-details-marker {
 	  box-shadow: inset 5px 5px 10px #454d68, inset -5px -5px 10px #454d68;
 	margin: 10px 20px 10px 20px;
 	border: 1px solid white;
-		width: 60%;
 	}
 	
 
