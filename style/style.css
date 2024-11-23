@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 .blogimg{
 	height:100vh;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .blogimg { height: 30vh; }
  
 .blog-post {
