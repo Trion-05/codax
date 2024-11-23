@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 	height:100vh;
 }
 @media (max-width: 768px) {
-  .blogimg { height: 50vh; }
+  .blogimg { height: 30vh; }
  
 .blog-post {
   margin-bottom: 4rem;
