@@ -128,10 +128,10 @@ h1, h2, h3, h4, h5, h6 {
  * Blog posts
  */
 .blogimg{
-	height:100vh;
+	height:30vh;
 }
 @media (min-width: 768px) {
-  .blogimg { height: 30vh; }
+  .blogimg { height: 60vh; }
  
 .blog-post {
   margin-bottom: 4rem;
