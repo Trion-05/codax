@@ -123,9 +123,16 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 4rem;
 }
 
+
 /*
  * Blog posts
  */
+.blogimg{
+	height:100vh;
+}
+@media (max-width: 768px) {
+  .blogimg { height: 50vh; }
+ 
 .blog-post {
   margin-bottom: 4rem;
 }
